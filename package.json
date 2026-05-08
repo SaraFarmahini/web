@@ -1,0 +1,9 @@
+{
+  "name": "mahyar-moghimi-site",
+  "private": true,
+  "description": "Personal website — static HTML",
+  "scripts": {
+    "dev": "npx --yes serve . -l 8080",
+    "start": "npx --yes serve . -l 8080"
+  }
+}

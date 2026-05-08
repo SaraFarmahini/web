@@ -1,0 +1,17 @@
+{
+  "name": "Mahyar Moghimi",
+  "short_name": "Mahyar Moghimi",
+  "description": "Operations & Marketplace Strategy — Hamburg",
+  "start_url": "./",
+  "display": "browser",
+  "background_color": "#f6f5f3",
+  "theme_color": "#2f4a6b",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any"
+    }
+  ]
+}

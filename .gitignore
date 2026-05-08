@@ -1,0 +1,11 @@
+.DS_Store
+*.log
+
+# Local job-application PDFs (not part of the public site)
+Moghimi_Mahyar_*.pdf
+
+# Camera originals — large; site uses .jpg copies in pics/
+*.HEIC
+
+# AutoRelate source captures — optimised JPEGs in repo are what the site loads
+pics/Screenshot*.png
