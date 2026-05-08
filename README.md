@@ -21,7 +21,26 @@ On GitHub project Pages, image URLs in meta tags must include the repo path (e.g
 
 **2. CV** — Replace `assets/Mahyar_Moghimi_CV.pdf` or update the `href` in `index.html`.
 
-**3. AutoRelate screenshots** — Optimised JPEGs `pics/autorelate-screen-1.jpg` and `pics/autorelate-screen-2.jpg` are exported from `Screenshot 2026-05-08 at 23.11.05.png` and `…23.11.49.png`. Re-export after changing sources.
+**3. AutoRelate screenshots** — The site uses optimised JPEGs `pics/autorelate-screen-1.jpg` and `pics/autorelate-screen-2.jpg`. Full-size PNG exports stay on your machine only (they are gitignored). Re-export JPEGs from your `Screenshot…png` files after design changes.
+
+## Git push troubleshooting (`RPC failed; HTTP 400`)
+
+If `git push` over **HTTPS** fails with **400** / disconnect:
+
+```bash
+git config --global http.version HTTP/1.1
+git config --global http.postBuffer 524288000
+git push -u origin main
+```
+
+Or switch to **SSH** (add an SSH key in GitHub → Settings → SSH keys):
+
+```bash
+git remote set-url origin git@github.com:SaraFarmahini/web.git
+git push -u origin main
+```
+
+This repository **does not** track `*.HEIC` or `pics/Screenshot*.png`, to keep pushes small (~5 MiB).
 
 ## Run locally
 
